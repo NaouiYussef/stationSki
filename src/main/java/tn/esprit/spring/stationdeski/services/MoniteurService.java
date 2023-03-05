@@ -1,10 +1,13 @@
 package tn.esprit.spring.stationdeski.services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.spring.stationdeski.entities.Moniteur;
 import tn.esprit.spring.stationdeski.repositories.MoniteurRepository;
 
 import java.util.List;
-
+@Service
+@AllArgsConstructor
 public class MoniteurService implements IMoniteurService{
     MoniteurRepository moniteurRepository;
     @Override
